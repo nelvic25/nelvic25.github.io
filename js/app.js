@@ -1,7 +1,6 @@
 "use strict"
-
+document.body.style.backgroundColor = "rgb(0, 0, 0)";
 alert('Bienvenid@ !!!');
-
 var temporizador = setInterval(function () {
       setColor();
 }, 500);
