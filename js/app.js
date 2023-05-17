@@ -8,7 +8,7 @@ var temporizador = setInterval(function () {
 
 function setColor() {
     var pagina = document.body;
-    pagina.style.backgroundColor = pagina.style.backgroundColor.toLowerCase() === "white" ? "lightblue" : "white";
+    //pagina.style.backgroundColor = pagina.style.backgroundColor.toLowerCase() === "white" ? "lightblue" : "white";
     var brightnessLevel = parseInt(currentColor.replace(/[^\d.]/g, ''));
 
     if (brightnessLevel < 100) {
@@ -18,7 +18,7 @@ function setColor() {
     }
   
     pagina.style.backgroundColor = `hsl(240, 100%, ${brightnessLevel}%)`;
-    
+
  }
  
 
