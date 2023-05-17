@@ -8,6 +8,6 @@ setTimeout(function () {
 
 function setColor() {
     var pagina = document.body;
-    pagina.style.backgroundColor = pagina.style.backgroundColor.toLowerCase() === "blue" ? "green" : "blue";
+    pagina.style.backgroundColor = pagina.style.backgroundColor.toLowerCase() === "blue" ? "red" : "blue";
  }
  
