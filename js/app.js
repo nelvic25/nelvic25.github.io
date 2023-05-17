@@ -4,11 +4,11 @@ alert('Bienvenid@ !');
 
 var temporizador = setInterval(function () {
       setColor();
-}, 3000);
+}, 1000);
 
 function setColor() {
     var pagina = document.body;
-    pagina.style.backgroundColor = pagina.style.backgroundColor.toLowerCase() === "blue" ? "lightblue" : "blue";
+    pagina.style.backgroundColor = pagina.style.backgroundColor.toLowerCase() === "white" ? "lightblue" : "white";
  }
  
 
