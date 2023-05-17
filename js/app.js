@@ -1,6 +1,6 @@
 "use strict"
 
-alert('Bienvenid@ !');
+alert('Bienvenid@ !!!');
 
 var temporizador = setInterval(function () {
       setColor();
