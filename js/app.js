@@ -30,10 +30,10 @@ function setColor() {
       }
       
       if (llegolimiteinf==false && llegolimitesup==true) {
-        if (rgbValues[2] > 0) {
+        if (rgbValues[2] > 100) {
           rgbValues[2] = parseInt(rgbValues[2]) - 1;
         }
-        if (rgbValues[2] == 0) {
+        if (rgbValues[2] == 100) {
           llegolimiteinf = true;
           llegolimitesup = false;
         }
