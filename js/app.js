@@ -1,9 +1,11 @@
 "use strict"
 document.body.style.backgroundColor = "rgb(0, 0, 0)";
+var llegolimiteinf = true;
+var llegolimitesup = false;
 alert('Bienvenid@ !!!');
 var temporizador = setInterval(function () {
       setColor();
-}, 200);
+}, 50);
 
 //function setColor() {
 //    var pagina = document.body;
@@ -15,11 +17,10 @@ function setColor() {
       var pagina = document.body;
       var currentColor = pagina.style.backgroundColor;
       var rgbValues = currentColor.match(/\d+/g);
-      var llegolimiteinf = true;
-      var llegolimitesup = false;
       
-      if (!llegolimitesup && llegolimiteinf) {
-        if (rgbValues[2] <= 255) {
+      
+      if (llegolimitesup==false && llegolimiteinf==true) {
+        if (rgbValues[2] < 255) {
           rgbValues[2] = parseInt(rgbValues[2]) + 1;
         }
         if (rgbValues[2] == 255) {
@@ -28,8 +29,8 @@ function setColor() {
         }
       }
       
-      if (!llegolimiteinf && llegolimitesup) {
-        if (rgbValues[2] >= 0) {
+      if (llegolimiteinf==false && llegolimitesup==true) {
+        if (rgbValues[2] > 0) {
           rgbValues[2] = parseInt(rgbValues[2]) - 1;
         }
         if (rgbValues[2] == 0) {
