@@ -9,25 +9,29 @@ p {
     text-align: justify;
 }
 
+.titulo{
+    font-size: 42px;
+}
+
+.datos_personales{
+    padding-top: 20px;
+    font-size: 20px;
+    text-align:justify;
+}
+
 .foto_perfil {
     float: left;
-    display: flex;
     align-items: center;
-    border-radius: 50%; 
+    border-radius: 100%; 
     overflow: hidden;
-    width: 250px;
-    height: 250px;
     margin-right: 20px;
+    object-fit: cover;
 }
 
 .foto_perfil img{
     max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.datos_personales {
-    overflow: hidden;
+    width: 250px;
+    height: 250px;
 }
 
 .horizontal-line {
@@ -35,3 +39,80 @@ p {
     width: 100%;
     background-color: white;
 }
+
+.wrap-collabsible {
+    margin-bottom: 1.2rem 0;
+}
+  
+input[type='checkbox'] {
+    display: none;
+}
+  
+.lbl-toggle {
+    display: block;
+
+  
+    font-weight: bold;
+    text-align: center;
+
+    font-family: verdana;
+    font-size: 18px;
+
+
+
+    padding: 1rem;
+  
+    color: white;
+    background: rgb(0, 0, 175);;
+  
+    cursor: pointer;
+  
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+  }
+  
+  .lbl-toggle:hover {
+    color: gray;
+  }
+  
+  .lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+  
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+  
+    transition: transform .2s ease-out;
+    
+  }
+  
+  .toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+  }
+  
+  .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+  }
+  
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 100vh;
+  }
+  
+  .toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .collapsible-content .content-inner {
+    background: rgb(0, 0, 100);
+    border-bottom: 1px solid rgba(87, 86, 78, 0.567);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 1rem;
+  }

@@ -1,8 +1,9 @@
 "use strict"
-document.body.style.backgroundColor = "rgb(0, 0, 0)";
+document.body.style.backgroundColor = "rgb(0, 0, 100)";
 var llegolimiteinf = true;
 var llegolimitesup = false;
 alert('Bienvenid@ !!!');
+
 var temporizador = setInterval(function () {
       setColor();
 }, 50);
@@ -20,10 +21,10 @@ function setColor() {
       
       
       if (llegolimitesup==false && llegolimiteinf==true) {
-        if (rgbValues[2] < 255) {
+        if (rgbValues[2] < 200) {
           rgbValues[2] = parseInt(rgbValues[2]) + 1;
         }
-        if (rgbValues[2] == 255) {
+        if (rgbValues[2] == 200) {
           llegolimitesup = true;
           llegolimiteinf = false;
         }
@@ -43,8 +44,21 @@ function setColor() {
       pagina.style.backgroundColor = newColor;
     }
     
+
+
     
  //function stopChangeColor() {
 //    clearInterval(temporizador)
 //}
+let myLabels = document.querySelectorAll('.lbl-toggle');
 
+Array.from(myLabels).forEach(label => {
+  label.addEventListener('keydown', e => {
+    // 32 === spacebar
+    // 13 === enter
+    if (e.which === 32 || e.which === 13) {
+      e.preventDefault();
+      label.click();
+    };
+  });
+});
