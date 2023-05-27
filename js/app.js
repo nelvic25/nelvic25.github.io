@@ -2,7 +2,6 @@
 document.body.style.backgroundColor = "rgb(0, 0, 100)";
 var llegolimiteinf = true;
 var llegolimitesup = false;
-alert('Bienvenid@ !!!');
 
 var temporizador = setInterval(function () {
       setColor();
@@ -21,10 +20,10 @@ function setColor() {
       
       
       if (llegolimitesup==false && llegolimiteinf==true) {
-        if (rgbValues[2] < 200) {
+        if (rgbValues[2] < 220) {
           rgbValues[2] = parseInt(rgbValues[2]) + 1;
         }
-        if (rgbValues[2] == 200) {
+        if (rgbValues[2] == 220) {
           llegolimitesup = true;
           llegolimiteinf = false;
         }
