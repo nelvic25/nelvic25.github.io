@@ -1,4 +1,4 @@
-h1 {
+.titulo{
     color: white;
     text-align: center;
 }
@@ -10,18 +10,20 @@ p {
 }
 
 .titulo{
-    font-size: 42px;
+    font-size: 48px;
+    font-family: Prata;
 }
 
 .datos_personales{
-    padding-top: 20px;
-    font-size: 20px;
-    text-align:justify;
+    font-size: 24px;
+    text-align:left ;
+    line-height: 200%;
+    font-family: Crimson pro;
 }
 
 .foto_perfil {
+    margin-left: 10cm;
     float: left;
-    align-items: center;
     border-radius: 100%; 
     overflow: hidden;
     margin-right: 20px;
@@ -115,4 +117,54 @@ input[type='checkbox'] {
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     padding: .5rem 1rem;
+  }
+
+  ul.a {
+    list-style-type: circle;
+    color: white;
+    font-family: Prata;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 1px;
+  }
+
+  p.a{
+    color: white;
+    font-family: verdana;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  a:visited {
+    color: grey;
+  }
+  
+  a:hover {
+    color: whitesmoke;
+  }
+  
+  a:active {
+    color: white;
+  }
+
+  p.idiomas{
+    color: white;
+    font-family: verdana;
+    font-size: 18px;
+    text-align: center;
+    word-spacing: 8cm;
+  }
+  p.idiomas2{
+    color: white;
+    font-family: verdana;
+    font-size: 18px;
+    text-align: left;
+    word-spacing: 1cm;
+  }
+  p.idiomas3{
+    color: white;
+    font-family: verdana;
+    font-size: 18px;
+    text-align: justify;
+    word-spacing: 1cm;
   }
