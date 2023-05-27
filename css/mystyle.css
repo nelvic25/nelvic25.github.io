@@ -98,7 +98,6 @@ input[type='checkbox'] {
   
   .collapsible-content {
     max-height: 0px;
-    overflow: hidden;
     transition: max-height .25s ease-in-out;
     overflow: auto;
   }
@@ -159,13 +158,23 @@ input[type='checkbox'] {
     color: white;
     font-family: verdana;
     font-size: 18px;
-    text-align: left;
-    word-spacing: 1cm;
+    text-align: center;
+    word-spacing: 1.3cm;
   }
   p.idiomas3{
     color: white;
     font-family: verdana;
     font-size: 18px;
-    text-align: justify;
-    word-spacing: 1cm;
+    text-align: center;
+    word-spacing: 5cm; 
   }
+
+  .b{
+    float: left;
+    color: white;
+    font-family: verdana;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  
